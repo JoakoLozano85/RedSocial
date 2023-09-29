@@ -1,0 +1,75 @@
+.chat{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.chat::before{
+    content: '';
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    top: -10%;
+    left: 48%;
+    background-image: linear-gradient(-45deg, #20dbc2 0%, #00bfa6 100%);
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.inputs{
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+}
+.inputs i{
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    font-size: 1.5rem;
+}
+.inputs input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+
+}
+.inputs input:placeholder-shown{
+    color: #aaa;
+    font-weight: 500;
+}
+.imagen{
+    width: 90%;
+}
+.righ-panel{
+    padding: 3rem 17% 2rem 1%;
+}
+.panels-container{
+    position: absolute;
+    top: 100px;
+    right: 300px;
+}
+.btn{
+    position: absolute;
+    top: -5px;
+    left: 85%;
+    align-items: center;
+    height: 35px;
+    width: 65px;
+}
+.lista{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    list-style-type: disclosure-closed;
+}
